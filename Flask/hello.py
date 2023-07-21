@@ -42,6 +42,11 @@ def index():
         fileA = open(city_url, "r")
         dataA = fileA.read()
         return Response(response=dataA, mimetype='application/json')
+    
+    newClass = City()
+    resultData = newClass.existThisCity(city)
+    if resultData == "false":
+        return Response(response=resultData, mimetype='text/html')
 
     result     = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address=Spain+'+city+'&key='+KEY_GOOGLE)
     parsed     = json.loads(result.content)
