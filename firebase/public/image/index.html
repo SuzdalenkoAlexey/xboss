@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--
+        firebase:
+        user_: imagedeveloper
+        email: xboss.developer@gmail.com
+        pass : 
+    -->
+    <link rel="icon" type="image/png" href="/assets/imgs/c.png">
+    <meta name="zen-verification" content="04o4Y9nKr9vrOkhPhsbzrW8Vm3pgWYvWirps3IA3YNIWeO00o5zKXwMJjLnTx8fd" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xBoss</title>
+    <link rel="stylesheet" href="/assets/vendors/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="/assets/css/meyawo.css">
+    <script src="/assets/js/mi/cities.js"></script>
+    <script>
+       let URL_PAGE   = window.location.href.split('?city=')
+       let alt_descr  = URL_PAGE[1].replaceAll('+', ' ')
+    </script>
+</head>
+<body>
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <h1>
+                <a class="logo" href="https://xboss.es" target="_blank" id="titlePage">xBoss</a>
+            </h1>
+        </div>          
+    </nav>
+
+    <div id="paragraf"></div>
+    <script>
+        document.title                                 = alt_descr
+        document.getElementById('titlePage').innerHTML = alt_descr
+
+        fetch('https://imagedeveloper.pythonanywhere.com/?city='+URL_PAGE[1]).then(res => res.json()).then(result => {
+            let htmlImages = '<div class="divImages">'
+            let srcImg     = ''
+            result.images.forEach(image => {
+                srcImg     = 'https://imagedeveloper.pythonanywhere.com/show_image/'+image
+                htmlImages +=  
+                    `<a href="/image/?city=`+URL_PAGE[1]+`"><img src="`+srcImg+`" alt="`+alt_descr+`" class="itemImage"></a>`
+            })
+            htmlImages += '</div>'
+            document.getElementById('paragraf').innerHTML  = htmlImages
+            
+        }).catch(e => {
+           window.location.href = '/'
+        })
+    </script>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        .itemImage{
+            width: 100%;
+        }
+        body{
+            background-color: #5E6298;
+        }
+        p{
+            color: white;
+        }
+    </style>
+
+
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-app-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-auth-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-database-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-firestore-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-functions-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-messaging-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-storage-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-analytics-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-remote-config-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-performance-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/init.js?useEmulator=true"></script>
+    <script src="/assets/js/mi/visitas.js"></script>
+</body>
+</html>

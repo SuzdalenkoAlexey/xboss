@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="/assets/imgs/c.png">
+    <meta name="zen-verification" content="04o4Y9nKr9vrOkhPhsbzrW8Vm3pgWYvWirps3IA3YNIWeO00o5zKXwMJjLnTx8fd" />
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="xBoss Desarrollo Web, Programación - Alexey and android developer JavaScript, PHP, SQL, Sqlite, MySQLi, Koltin, Java, Python, .NET, C++, C#.">
+    <meta name="keywords" content="JS, PHP, CSS, C++, .NET, Kotlin, Java, SQL, Sqlite, Dart, Flatter, MySQL, MySQLi, Frontend, Backend, HTML, VueJS, Laravel, Symfony">
+    <meta name="author" content="xBoss">
+    <title>Desarrollo Web Santander</title>
+    <link rel="stylesheet" href="/assets/vendors/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="/assets/css/meyawo.css">
+    <script src="/assets/js/mi/cities.js"></script>
+    <script>
+        var getRandomArbitrary = (min, max) => { return parseInt(Math.random() * (max - min) + min); }
+        let page_url   = window.location.href.split('?city=')
+
+       // if(page_url[1] == undefined || !page_url[1]){  
+       //     let randomNumber     = getRandomArbitrary(0, CITIES.length-1)
+       //     let place            = CITIES[randomNumber].replaceAll(' ', '+')
+       //     window.location.href = '?city='+place
+       // } 
+
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="https://xboss.es">xBoss</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="/">¡Hola!</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">Sobre mí</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Cartera</a>
+                </li> <!--
+                <li class="item">
+                    <a class="link" href="#blog">Blog</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contacto</a>
+                </li> -->
+                <li class="item ml-md-3">
+                    <a href="mailto:xboss.developer@gmail.com" class="btn btn-primary">xboss.developer@gmail.com</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="https://x-route-planning.web.app/" target="_blank">Route Planning</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav>
+
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <!-- <span class="up">¡Hola!</span> -->
+                <span class="down" id="titlePageText">Desarrollo Web Santander</span>
+            </h1>
+            <p class="header-subtitle">Programación, desarrollo Web/Android</p>            
+            <a href="mailto:xboss.developer@gmail.com"><button class="btn btn-primary">¿Hablamos?</button></a>
+        </div>              
+    </header>
+
+    <section class="section pt-0" id="about">
+        <div class="container text-center">
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/alexey.jpg" class="about-img" alt="Diseño Web">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">¿Quién soy yo?</p>
+                    <h2 class="section-title mb-3">Sobre mí</h2>
+                    <p>
+                        Mi nombre es Alexey, soy apasionado de la informática y los lenguajes de programación.
+                        <br><br>Cuento con la experiencia en desarrollo web (Frontend) con <b>HTML</b>, <b>CSS</b>, <b>JS</b> nativos y con siguientes frameworks <b>Angular</b> y <b>VueJS</b> .
+                        <br>Para Backend mi preferencia es <b>PHP</b> apoyándome en <b>Laravel</b> o <b>Symfony</b>, base datos <b>MySQL</b> y en ocasiones <b>Firebase</b>.
+                        <br><br><b>Java</b> o <b>Kotlin</b> son mis favoritos para desarrollo de aplicaciones móviles (<b>Android</b>) y <b>Dart</b> y su framework <b>Flatter</b> cuando necesito crear para <b>IOS</b>.
+                    </p>
+                    <a href="mailto:xboss.developer@gmail.com"><button class="btn-rounded btn btn-outline-primary mt-4">¿Hablamos?</button></a>
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">¿Que puede hacer por ti?</p>
+            <h6 class="section-title mb-6">Servicios</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/pencil-case.svg" alt="Diseño Web" class="icon">
+                            <h6 class="title">Diseño Web</h6>
+                            <p class="subtitle">Diseño Web personal de acuerdo con tus necesidades </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/responsive.svg" alt="Diseño Web" class="icon">
+                            <h6 class="title">Multiplataforma</h6>
+                            <p class="subtitle"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/toolbox.svg" alt="Diseño Web" class="icon">
+                            <h6 class="title">Backend robusto y confiable</h6>
+                            <p class="subtitle"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/analytics.svg" alt="Diseño Web" class="icon">
+                            <h6 class="title">Soporte</h6>
+                            <p class="subtitle"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle" id="sectionSubtitle">Diseño Web</p>
+            <h6 class="section-title mb-6" id="sectionTitleMb">Portfolio</h6>
+            <!-- row -->
+            <div class="row" id="porfolioItemImage">
+                
+               
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+    <!-- pricing section -->
+    <section class="section" id="pricing">
+        <div class="container text-center">
+            <p class="section-subtitle">Precios y Costes</p>
+            <h6 class="section-title mb-6">Precios de servicios</h6>
+            <!-- row -->
+            <div class="pricing-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/scooter.svg" alt="Diseño Web">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Web Estática</h6>
+                        <div class="pricing-card-list">
+                            <p>Diseño</p>
+                            <p>Desarrollo</p>
+                            <p>Mantenimiento</p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>desde</span><br>
+                        <span>299.00 €</span>
+                    </div>
+                    <a href="mailto:xboss.developer@gmail.com" class="btn btn-primary mt-3 pricing-card-btn">Más info</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/shipped.svg" alt="Diseño Web">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Web Corporativa</h6>
+                        <div class="pricing-card-list">
+                            <p>Diseño</p>
+                            <p>Desarrollo</p>
+                            <p>Mantenimiento</p>
+                            <p>Contenido modificable</p>
+                            <!-- <p><i class="ti-close"></i></p> -->
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>desde</span><br>
+                        <span>699.00 €</span>
+                    </div>
+                    <a href="mailto:xboss.developer@gmail.com" class="btn btn-primary mt-3 pricing-card-btn">Más info</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/startup.svg" alt="Diseño Web">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Aplicación</h6>
+                        <div class="pricing-card-list">
+                            <p>Web / Android</p>
+                            <p>Aplicación</p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>desde</span><br>
+                        <span>1000.00 €</span>
+                    </div>
+                    <a href="mailto:xboss.developer@gmail.com" class="btn btn-primary mt-3 pricing-card-btn">Más info</a>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+    <section class="section-sm bg-primary">
+        <div class="container text-center text-sm-left">
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">¿Necesitas desarrollo web personalizado?</h6>
+                    <p class="m-0 text-light">Siempre puede contar conmigo para un desarrollo o una consulta</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <a href="mailto:xboss.developer@gmail.com"><button class="btn btn-lg my-font btn-light rounded">Contacto</button></a>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <!--
+    <section class="section" id="testmonial">
+        <div class="container text-center">
+            <p class="section-subtitle">What Think Client About Me ?</p>
+            <h6 class="section-title mb-6">Testmonial</h6>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img" alt="Diseño Web">                           
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img" alt="Diseño Web">                        
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis adipisci nihil.</p>
+                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section> 
+    
+
+    <section class="section" id="blog">
+        <div class="container text-center">
+            <p class="section-subtitle">Recent Posts?</p>
+            <h6 class="section-title mb-6">Blog</h6>
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/img-1.jpg" class="blog-card-img" alt="Diseño Web">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Admin</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                        <a href="#"><i class="ti-comment"></i> 123</a>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
+
+                    <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
+                    <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
+
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/imgs/img-2.jpg" class="blog-card-img" alt="Diseño Web">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Explicabo illo</h6>
+
+                    <p class="blog-card-caption">
+                        <a href="#">By: Admin</a>
+                        <a href="#"><i class="ti-heart text-danger"></i> 456</a>
+                        <a href="#"><i class="ti-comment"></i> 264</a>
+                    </p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+
+                    <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    -->
+    <!--
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>                 
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email"requried>                 
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">                  
+                    </div>
+                </div>  
+            </form>
+        </div>
+    </section>
+
+    -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://xboss.es">xBoss</a> / Visitas: <span id="spanVisitas">Cargando...</span></p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="https://xboss.es/robots.txt" class="link"><i class="ti-facebook"></i></a>
+                <a href="https://xboss.es/robots.txt" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="https://xboss.es/robots.txt" class="link"><i class="ti-google"></i></a>
+                <a href="https://xboss.es/robots.txt" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="https://xboss.es/robots.txt" class="link"><i class="ti-instagram"></i></a>
+                <a href="https://xboss.es/sitemap.xml" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+        <div class="row" id="linksWebSite"></div> 
+    </div> 
+	
+    <script src="/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+	<script src="/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+
+    <script src="/assets/js/meyawo.js"></script>
+    <script src="/assets/js/mi/location.js"></script>
+    <script src="/assets/js/mi/links.js"></script>
+
+     
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-app-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-auth-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-database-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-firestore-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-functions-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-messaging-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-storage-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-analytics-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-remote-config-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/9.19.1/firebase-performance-compat.js"></script>
+    <script src="https://x-route-planning.web.app/__/firebase/init.js?useEmulator=true"></script>
+    <script src="/assets/js/mi/visitas.js"></script>
+
+
+</body>
+</html>

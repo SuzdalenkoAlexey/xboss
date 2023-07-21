@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /json.php
+
+
+Host: xboss.es
+Sitemap: https://xboss.es/sitemap.xml
