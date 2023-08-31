@@ -12238,3 +12238,13 @@ pre .code {
 #linksWebSite{
   justify-content: space-around;
 }
+
+.whatsapp_chat{
+  width: 40px;
+  position: fixed;
+  bottom: 11px;
+  right: 11px;
+}
+.whatsapp_chat:hover{
+  cursor: pointer;
+}

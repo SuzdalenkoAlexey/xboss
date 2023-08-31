@@ -10,4 +10,3 @@ for(let i = 0; i < 22; i++){
 }
 
 linksWebSite.innerHTML = htmlLinks+'<br><br><br>'
-
