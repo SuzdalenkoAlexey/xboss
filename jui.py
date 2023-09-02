@@ -3,7 +3,7 @@ import smtplib, ssl
 
 sender_email = "xboss.developer@gmail.com"
 receiver_email = "xboss.developer@gmail.com"
-password = "suzdalenko"
+password = "doneqrmjfhbxlpwv"
 
 message = {}
 message["Subject"] = "multipart test"
